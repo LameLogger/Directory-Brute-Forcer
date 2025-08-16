@@ -27,3 +27,30 @@ curl or wget
 grep, awk, sed
 
 📄 Sample Script: dirbuster.shrcer is a great Bash project that mimics tools like dirb or gobuster, and helps you understand how HTTP requests work and how to automate web enumeration.
+🧪 How to Run
+chmod +x dirbuster.sh
+./dirbuster.sh https://example.com /path/to/wordlist.txt 200
+
+📌 Example Wordlist
+
+Save this as small.txt:
+
+admin
+login
+dashboard
+uploads
+images
+config
+hidden
+
+📦 Ideas for Expansion
+
+Multithreading (parallel requests with xargs -P or &)
+
+Add support for file extensions (e.g., .php, .html)
+
+Random User-Agent headers
+
+Proxy support (curl -x)
+
+Output to file: --output results.txt
